@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Record</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <caption>Access Record</caption>
+            <tr>
+                <th>STD Name</th>
+                <th>Staff</th>
+                <th>Access Date</th>
+            </tr>
+            {% for i in obj %}
+            <tr>
+                <td>{{i.std_name}}</td>
+                <td>{{i.assigned_staff}}</td>
+                <td>{{i.access_date}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
